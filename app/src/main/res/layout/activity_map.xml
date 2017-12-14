@@ -7,49 +7,52 @@
     tools:context="de.luh.hci.mid2017.wanderlust2.MapActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteY="519dp">
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_weight="1"
-            android:text=" Anpassen" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_weight="1"
-            android:text="Route starten" />
-    </LinearLayout>
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="240dp">
 
         <com.google.android.gms.maps.MapView
             android:id="@+id/mapView2"
             android:layout_width="match_parent"
-            android:layout_height="520dp"
+            android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true" />
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteX="240dp" />
 
-    </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteY="519dp">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:text=" Anpassen" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:text="Route starten" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

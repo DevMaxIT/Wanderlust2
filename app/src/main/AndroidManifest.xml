@@ -70,6 +70,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="de.luh.hci.mid2017.wanderlust2.MainActivity" />
         </activity>
+        <activity android:name=".DesitnationActivity"></activity>
     </application>
 
 </manifest>
