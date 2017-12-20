@@ -27,13 +27,7 @@
             android:name=".Intro"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_intro"
-            android:theme="@style/FullscreenTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/FullscreenTheme"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -70,7 +64,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="de.luh.hci.mid2017.wanderlust2.MainActivity" />
         </activity>
-        <activity android:name=".DesitnationActivity"></activity>
+        <activity android:name=".DesitnationActivity" />
+        <activity
+            android:name=".SelectRootActivity"
+            android:label="@string/title_activity_select_root"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".SelectPathActivity"
+            android:label="@string/title_activity_select_path"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

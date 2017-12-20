@@ -11,17 +11,15 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="240dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
-        <com.google.android.gms.maps.MapView
-            android:id="@+id/mapView2"
+        <ImageView
+            android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            tools:layout_editor_absoluteX="240dp" />
+            app:srcCompat="@drawable/map" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
