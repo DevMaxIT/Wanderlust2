@@ -1,9 +1,11 @@
 package de.luh.hci.mid2017.wanderlust2
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.AdapterView
+import android.widget.Button
 import android.widget.GridView
 import android.widget.Toast
 
@@ -18,9 +20,16 @@ class SelectPathActivity : AppCompatActivity() {
         gridview.adapter = ImageAdapter(this)
 
         gridview.onItemClickListener = AdapterView.OnItemClickListener { parent, v, position, id ->
-            Toast.makeText(this@SelectPathActivity, "" + position,
+            Toast.makeText(this@SelectPathActivity, "Hallo!" + position,
                     Toast.LENGTH_SHORT).show()
         }
+
+        val button = findViewById<Button>(R.id.button10)
+        button.setOnClickListener({
+            val intent = Intent(this@SelectPathActivity, MapActivity::class.java)
+            startActivity(intent)
+
+        })
     }
 
 }

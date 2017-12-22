@@ -60,6 +60,19 @@ public class ImageAdapter extends BaseAdapter {
         holder.imageview.setId(position);
         holder.id = position;
         holder.imageview.setImageResource(mThumbIds[position]);
+        holder.imageview.setTag(holder.checkbox);
+        holder.imageview.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                CheckBox cb = (CheckBox) v.getTag();
+                if(cb.isChecked())
+                    cb.setChecked(false);
+                else
+                    cb.setChecked(true);
+            }
+        });
+
        return convertView;
     }
 
@@ -72,7 +85,22 @@ public class ImageAdapter extends BaseAdapter {
             R.drawable.sample_4, R.drawable.sample_5,
             R.drawable.sample_1,
             R.drawable.sample_2, R.drawable.sample_3,
-            R.drawable.sample_4, R.drawable.sample_5
+            R.drawable.sample_4, R.drawable.sample_5,
+            R.drawable.sample_1, R.drawable.sample_1,
+            R.drawable.sample_2, R.drawable.sample_3,
+            R.drawable.sample_4, R.drawable.sample_5,
+            R.drawable.sample_1,
+            R.drawable.sample_2, R.drawable.sample_3,
+            R.drawable.sample_1, R.drawable.sample_1,
+            R.drawable.sample_2, R.drawable.sample_3,
+            R.drawable.sample_4, R.drawable.sample_5,
+            R.drawable.sample_1,
+            R.drawable.sample_2, R.drawable.sample_3,
+            R.drawable.sample_1, R.drawable.sample_1,
+            R.drawable.sample_2, R.drawable.sample_3,
+            R.drawable.sample_4, R.drawable.sample_5,
+            R.drawable.sample_1,
+            R.drawable.sample_2, R.drawable.sample_3
     };
 
     class ViewHolder {
