@@ -19,11 +19,6 @@ class SelectPathActivity : AppCompatActivity() {
         val gridview = findViewById<View>(R.id.gridview) as GridView
         gridview.adapter = ImageAdapter(this)
 
-        gridview.onItemClickListener = AdapterView.OnItemClickListener { parent, v, position, id ->
-            Toast.makeText(this@SelectPathActivity, "Hallo!" + position,
-                    Toast.LENGTH_SHORT).show()
-        }
-
         val button = findViewById<Button>(R.id.button10)
         button.setOnClickListener({
             val intent = Intent(this@SelectPathActivity, MapActivity::class.java)

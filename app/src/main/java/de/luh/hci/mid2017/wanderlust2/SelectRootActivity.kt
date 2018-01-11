@@ -44,6 +44,30 @@ class SelectRootActivity : AppCompatActivity() {
             startActivity(intent)
 
         })
+        //
+
+        val wegpunkte1 = findViewById<Button>(R.id.info_text)
+        wegpunkte1.setOnClickListener({
+            val intent = Intent(this@SelectRootActivity, SelectPathActivity::class.java)
+            startActivity(intent)
+
+        })
+
+        val wegpunkte2 = findViewById<Button>(R.id.info_text0)
+        wegpunkte2.setOnClickListener({
+            val intent = Intent(this@SelectRootActivity, SelectPathActivity::class.java)
+            startActivity(intent)
+
+        })
+
+
+        val wegpunkte3 = findViewById<Button>(R.id.info_text2)
+        wegpunkte3.setOnClickListener({
+            val intent = Intent(this@SelectRootActivity, SelectPathActivity::class.java)
+            startActivity(intent)
+
+        })
+
 
 
     }
