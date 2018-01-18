@@ -15,7 +15,7 @@
         tools:layout_editor_absoluteY="0dp">
 
         <fragment
-            android:id="@+id/fragment"
+            android:id="@+id/map"
             android:name="com.google.android.gms.maps.MapFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
@@ -38,7 +38,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_weight="1"
-            android:text=" Anpassen"
+            android:text="Anpassen"
             android:background="@color/colorPrimary"
             android:textColor="@color/common_google_signin_btn_text_dark_default"/>
 

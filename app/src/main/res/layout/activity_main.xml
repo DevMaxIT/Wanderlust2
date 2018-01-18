@@ -29,6 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_weight="1"
+        android:focusedByDefault="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -48,12 +49,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView"
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:id="@+id/map"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/map" />
+            android:layout_height="match_parent"/>
     </LinearLayout>
 
 
