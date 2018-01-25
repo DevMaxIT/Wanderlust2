@@ -21,15 +21,14 @@ class MainActivity : FragmentActivity(), OnMapReadyCallback, GoogleMap.OnMapClic
 
         val button = findViewById<Button>(R.id.button5)
         button.setOnClickListener({
-                val intent = Intent(this@MainActivity, SelectRootActivity::class.java)
-                startActivity(intent)
+            val intent = Intent(this@MainActivity, SelectRootActivity::class.java)
+            startActivity(intent)
 
-            })
+        })
 
         val mapFragment = fragmentManager
                 .findFragmentById(R.id.map) as MapFragment
         mapFragment.getMapAsync(this)
-
 
 
     }
@@ -37,12 +36,11 @@ class MainActivity : FragmentActivity(), OnMapReadyCallback, GoogleMap.OnMapClic
     override fun onMapReady(map: GoogleMap) {
         mMap = map
         val han = LatLng(52.4, 9.7)
-        //mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(han))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(han, 15F))
         mMap.setOnMapClickListener(this)
     }
 
-    override fun onMapClick(pos:LatLng){
+    override fun onMapClick(pos: LatLng) {
 
         val markerOptions = MarkerOptions()
 

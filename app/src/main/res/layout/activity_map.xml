@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="522dp"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
@@ -38,9 +38,9 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_weight="1"
-            android:text="Anpassen"
             android:background="@color/colorPrimary"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"/>
+            android:text="Anpassen"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
 
         <Button
@@ -51,9 +51,9 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_weight="1"
-            android:text="Route starten"
             android:background="@color/colorPrimary"
-            android:textColor="@color/common_google_signin_btn_text_dark_default"/>
+            android:text="Route starten"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
 
 
     </LinearLayout>
