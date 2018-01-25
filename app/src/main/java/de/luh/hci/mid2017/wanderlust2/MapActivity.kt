@@ -29,11 +29,11 @@ class MapActivity: AppCompatActivity() {
             val intent = Intent(this@MapActivity, SelectPathActivity::class.java)
             startActivity(intent)
         })
-        /* val buttonstartRoute = findViewById<Button>(R.id.button2)
+        val buttonstartRoute = findViewById<Button>(R.id.button2)
          buttonstartRoute.setOnClickListener({
              Toast.makeText(this, "Navigation wird auf der Uhr gestartet.",
                      Toast.LENGTH_SHORT).show()
-         })
+         })/*
          val mapFragment = fragmentManager
                  .findFragmentById(R.id.map) as MapFragment
          mapFragment.getMapAsync(this)*/
