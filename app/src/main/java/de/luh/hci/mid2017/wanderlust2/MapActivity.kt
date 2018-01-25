@@ -16,9 +16,10 @@ import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.GoogleMap
 
 
-class MapActivity : FragmentActivity(), OnMapReadyCallback{
+/*class MapActivity : FragmentActivity(), OnMapReadyCallback*/
+class MapActivity: AppCompatActivity() {
 
-    private lateinit var mMap: GoogleMap
+    //private lateinit var mMap: GoogleMap
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,21 +29,20 @@ class MapActivity : FragmentActivity(), OnMapReadyCallback{
             val intent = Intent(this@MapActivity, SelectPathActivity::class.java)
             startActivity(intent)
         })
-        val buttonstartRoute = findViewById<Button>(R.id.button2)
-        buttonstartRoute.setOnClickListener({
-            Toast.makeText(this, "Navigation wird auf der Uhr gestartet.",
-                    Toast.LENGTH_SHORT).show()
-        })
-        val mapFragment = fragmentManager
-                .findFragmentById(R.id.map) as MapFragment
-        mapFragment.getMapAsync(this)
+        /* val buttonstartRoute = findViewById<Button>(R.id.button2)
+         buttonstartRoute.setOnClickListener({
+             Toast.makeText(this, "Navigation wird auf der Uhr gestartet.",
+                     Toast.LENGTH_SHORT).show()
+         })
+         val mapFragment = fragmentManager
+                 .findFragmentById(R.id.map) as MapFragment
+         mapFragment.getMapAsync(this)*/
     }
 
-    override fun onMapReady(map: GoogleMap) {
+    /*override fun onMapReady(map: GoogleMap) {
         mMap = map
         val han = LatLng(52.4, 9.7)
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(han, 15F))
-    }
-
-
+        }*/
 }
+
